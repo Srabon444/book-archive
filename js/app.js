@@ -34,7 +34,7 @@ const searchBook = () => {
 
     // fetching the data from the server
     else {
-        const url = `http://openlibrary.org/search.json?q=${inputValue}`;
+        const url = `https://openlibrary.org/search.json?q=${inputValue}`;
 
         fetch(url)
             .then(response => response.json())

@@ -1,0 +1,54 @@
+
+/* ----------------------------
+        custom css style
+-------------------------------*/
+body {
+    font-family: 'Antic Slab', serif;
+    background-color: #F9F7F4;
+}
+
+
+
+/* ----------------------------------
+        loading spinner css style
+-------------------------------------*/
+#spinner {
+    display: none;
+}
+
+
+
+/* ---------------------------------- 
+           footer section
+---------------------------------- */
+
+footer {
+    text-align: center;
+    background-color: #f9f8f4;
+}
+
+.icon{
+    font-size: 32px;
+    margin-left: 14px;
+    color: #372213;
+}
+
+.icon:hover{
+    color: #000;
+}
+
+.social-icons a{
+    text-decoration: none;
+}
+
+.footer-logo img{
+    width: 300px;
+}
+
+.footer-content{
+    padding: 15px;
+}
+
+/* ---------------------------------- 
+          footer section
+---------------------------------- */

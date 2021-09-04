@@ -55,6 +55,18 @@ const searchBook = () => {
 }
 
 
+// keyboard enter button press event handler
+document.addEventListener("keyup", (event) => {
+    if (event.key === "Enter") {
+        // Cancel the default action, if needed
+        event.preventDefault();
+        // Trigger the button element with a click
+        searchBook();
+    }
+})
+
+
+
 // display books data
 const displaySearchResult = data => {
 
@@ -105,12 +117,6 @@ const displaySearchResult = data => {
     toggleSpinner('none');
     toggleSearchResult('');
 
-}
-
-
-// reloadPage function
-const reloadPage = () => {
-    window.location.reload();
 }
 
 /* -----------------------------------------------------

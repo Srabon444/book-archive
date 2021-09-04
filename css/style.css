@@ -1,11 +1,45 @@
 
 /* ----------------------------
-        custom css style
+        universal css style
 -------------------------------*/
 body {
     font-family: 'Antic Slab', serif;
     background-color: #F9F7F4;
 }
+
+a {
+    text-decoration: none;
+}
+
+
+
+/* ----------------------------
+        website heading
+-------------------------------*/
+.website-title{
+     color: #372213;
+     
+}
+
+
+
+
+/* --------------------------------
+    for card animation start
+----------------------------------*/
+.trans-card {
+    transition: 0.4s;
+  }
+  
+.trans-card:hover {
+    transform: translateY(-1rem);
+    box-shadow: 10px 10px 24px -13px rgba(0,0,0,0.75);
+    border-radius: 10px;
+    cursor: pointer;
+  }
+/* --------------------------------
+    for card animation end
+----------------------------------*/
 
 
 

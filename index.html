@@ -34,7 +34,10 @@
     <section>
         <header class="container mt-5 text-center">
 
-            <h1 class=" fw-bold" style="color: #372213">Book Archive</h1>
+            <!-- website heading -->
+            <a href="#" onclick="reloadPage()">
+                <h1 class="website-title fw-bold">Book Archive</h1>
+            </a>
 
 
             <!-- input value search bar div -->
@@ -54,7 +57,7 @@
             <div id="spinner" class="">
                 <h3>Please wait while loading...</h3>
                 <div>
-                    <img src="images/loading.gif" alt="">
+                    <img class="img-fluid" src="images/loading.gif" alt="">
                 </div>
                 <button onclick="reloadPage()" class="btn btn-outline-secondary mt-3">Reload Page</button>
             </div>
@@ -66,26 +69,21 @@
     <!-- display result area  -->
     <section class="container" >
 
-        <!-- welcome message and image  -->
-        <div id="search-result"  class="row row-cols-1 row-cols-md-3 g-4">
+       <!-- welcome message and image  -->
+     <div id="search-result"  class="row row-cols-1 row-cols-md-3 g-4" style="display: grid;">
             
-            <div class=" mx-auto">
-                <p>
-                    Find and read more books you'll love, and keep track of the books you want to read. Be part of the world's largest community of book lovers on Book Archive.
-                </p>
-
-                <div>
-                    <!-- <img class="img-fluid" src="images/girl-reading-book.png" alt=""> -->
-                    <img class="img-fluid" src="images/girl-reading-book.png" alt="girl-reading-book">
-                </div>
-
-                
-
+        <div class=" mx-auto">
+            <p>Find and read more books you'll love, and keep track of the books you want to read. Be part of the world's largest community of book lovers on Book Archive.</p>
+            <div>
+                <img class="img-fluid" src="images/girl-reading-book.png" alt="girl-reading-book">
             </div>
-
         </div>
 
+    </div>
+
     </section>
+
+     
 
 
     <!-- footer section -->

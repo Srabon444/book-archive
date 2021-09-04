@@ -31,6 +31,8 @@ const searchBook = () => {
     // input field Error handle Message();
     if (inputValue == "") {
         searchFeedbackMessage.innerHTML = `<h1 class="text-danger">please input first!</h1>`
+        const displayQuote = document.getElementById('show-Quote');
+        displayQuote.textContent = '';
     }
 
     // fetching the data from the server
@@ -131,9 +133,9 @@ fetch('https://api.kanye.rest/')
     .then(res => res.json())
     .then(data => document.getElementById('show-Quote').innerHTML = `
         <h5>
-            "
+        <i class="fas fa-quote-left"></i>   
                 ${data.hasOwnProperty('quote') && data.quote.length && data.quote}
-            "
+        <i class="fas fa-quote-right"></i> 
         </h5>
 `)
 

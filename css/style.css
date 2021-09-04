@@ -1,7 +1,7 @@
-
 /* ----------------------------
         universal css style
 -------------------------------*/
+
 body {
     font-family: 'Antic Slab', serif;
     background-color: #F9F7F4;
@@ -14,53 +14,51 @@ a {
 .form-control:focus {
     box-shadow: 0px 0px 6px 0px #333333;
     border-color: #DCD6CC;
-    
-    
- }
+}
 
- .form-control{
+.form-control {
     border: #DCD6CC 1px solid;
- }
+}
 
 
 /* ----------------------------
         website heading
 -------------------------------*/
-.website-title{
-     color: #372213;
-     display: inline-block;
-     
+
+.website-title {
+    color: #372213;
+    display: inline-block;
 }
-
-
 
 
 /* --------------------------------
     for card animation start
 ----------------------------------*/
+
 .trans-card {
     transition: 0.4s;
-  }
-  
+}
+
 .trans-card:hover {
     transform: translateY(-1rem);
-    box-shadow: 10px 10px 24px -13px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 24px -13px rgba(0, 0, 0, 0.75);
     border-radius: 10px;
     cursor: pointer;
-  }
+}
+
+
 /* --------------------------------
     for card animation end
 ----------------------------------*/
 
 
-
 /* ----------------------------------
         loading spinner css style
 -------------------------------------*/
+
 #spinner {
     display: none;
 }
-
 
 
 /* ---------------------------------- 
@@ -72,27 +70,28 @@ footer {
     background-color: #f9f8f4;
 }
 
-.icon{
+.icon {
     font-size: 32px;
     margin-left: 14px;
     color: #372213;
 }
 
-.icon:hover{
+.icon:hover {
     color: #000;
 }
 
-.social-icons a{
+.social-icons a {
     text-decoration: none;
 }
 
-.footer-logo img{
+.footer-logo img {
     width: 300px;
 }
 
-.footer-content{
+.footer-content {
     padding: 15px;
 }
+
 
 /* ---------------------------------- 
           footer section

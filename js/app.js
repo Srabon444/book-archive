@@ -1,5 +1,3 @@
-
-
 /* -----------------------------------------------------
              Book Archive JavaScript code start
 -------------------------------------------------------*/
@@ -81,7 +79,7 @@ const displaySearchResult = data => {
     // search result response 
     document.getElementById("searchResultMessage").innerHTML = `
         <h1> ${numFound} results founds! you got ${total} </h1>
-        ` ;
+        `;
 
     if (total === 0) {
 
@@ -90,7 +88,7 @@ const displaySearchResult = data => {
             
             <img src="no-book-found.png" class="img-fluid" alt="no-book-found" />
 
-        ` ;
+        `;
 
 
     }
@@ -118,6 +116,38 @@ const displaySearchResult = data => {
     toggleSearchResult('');
 
 }
+
+
+// new quotes function async-  await
+// const getQuote = async () => {
+//     const quote = await fetch('https://api.kanye.rest/');
+//     console.log("quote", quote);    
+// }
+// getQuote();
+
+
+// new quotes function
+fetch('https://api.kanye.rest/')
+    .then(res => res.json())
+    .then(data => document.getElementById('show-Quote').innerHTML = `
+        <h5>
+            "
+                ${data.hasOwnProperty('quote') && data.quote.length && data.quote}
+            "
+        </h5>
+`)
+
+
+// reloadPage function
+const reloadPage = () => {
+    window.location.reload();
+}
+
+
+
+
+
+
 
 /* -----------------------------------------------------
              Book Archive JavaScript code end

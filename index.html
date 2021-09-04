@@ -11,8 +11,7 @@
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 
     <!-- bootstrap 5 CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- google Antic Slab fonts 400 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,22 +34,20 @@
         <header class="container mt-5 text-center">
 
             <!-- website heading -->
-            <a href="#">
+            <a href="#" onclick="reloadPage()">
                 <h1 class="website-title fw-bold">Book Archive</h1>
             </a>
-            
-            
+
+
 
 
             <!-- input value search bar div -->
             <div class="input-group mb-3 w-75 mx-auto">
-                <input class="form-control" id="input-value" type="text" placeholder="Search books..."
-                    aria-label="" aria-describedby="button-addon2">
-                <button class="btn btn-outline-secondary" type="button" id="search-btn"
-                    onclick="searchBook()">Search <i class="fas fa-search"></i> </button>
+                <input class="form-control" id="input-value" type="text" placeholder="Search books..." aria-label="" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="button" id="search-btn" onclick="searchBook()">Search <i class="fas fa-search"></i> </button>
             </div>
 
-            
+
 
             <!-- total search result number & error message -->
             <div id="searchResultMessage" class=" fw-bold my-5">
@@ -71,23 +68,26 @@
     </section>
 
     <!-- display result area  -->
-    <section class="container" >
+    <section class="container">
 
-       <!-- welcome message and image  -->
-     <div id="search-result"  class="row row-cols-1 row-cols-md-3 g-4" style="display: grid;">
-            
-        <div class=" mx-auto">
-            <p>Find and read more books you'll love, and keep track of the books you want to read. Be part of the world's largest community of book lovers on Book Archive.</p>
-            <div>
-                <img class="img-fluid" src="images/girl-reading-book.png" alt="girl-reading-book">
+        <!-- welcome message and image  -->
+        <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4" style="display: grid;">
+
+            <div class="mx-auto">
+
+                <!-- data quote display area -->
+                <div class="text-center fw-bold" id="show-Quote"> </div>
+
+                <div class="my-3">
+                    <img class="img-fluid" src="images/girl-reading-book.png" alt="girl-reading-book">
+                </div>
             </div>
-        </div>
 
-    </div>
+        </div>
 
     </section>
 
-     
+
 
 
     <!-- footer section -->
@@ -111,8 +111,7 @@
             </div>
             <div>
                 <p>
-                    Copyright &copy; 2022 Book Archive | Site designed by <a href="https://github.com/taibislamdipu"
-                        target="_blank"><span>Apollo Software Co.</span></a>
+                    Copyright &copy; 2022 Book Archive | Site designed by <a href="https://github.com/taibislamdipu" target="_blank"><span>Apollo Software Co.</span></a>
                 </p>
             </div>
         </div>
@@ -122,9 +121,7 @@
 
 
     <!-- bootstrap 5 JavaScript CDN  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 
     <!-- custom book archive javascript file   -->

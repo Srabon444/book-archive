@@ -26,9 +26,9 @@ const searchBook = () => {
 
     // get input text
     const inputValueText = document.getElementById("input-value");
+
     const inputValue = inputValueText.value;
     console.log(inputValue);
-
 
     // input field Error handle Message();
     if (inputValue == "") {
@@ -50,6 +50,7 @@ const searchBook = () => {
         // clear previous search input value
         inputValueText.value = '';
     }
+
 
 }
 
@@ -77,7 +78,7 @@ const displaySearchResult = data => {
             
             <img src="no-book-found.png" class="img-fluid" alt="no-book-found" />
 
-        ` ;        
+        ` ;
 
 
     }

@@ -74,10 +74,10 @@ const displaySearchResult = data => {
 
         document.getElementById("searchResultMessage").innerHTML = `
             <h1 class="text-danger">no result found!</h1>
-            <img src="../images/no-book-found.png" class="img-fluid" alt="no-book-found" />
-        ` ;
+            
+            <img src="/images/no-book-found.png" class="img-fluid" alt="no-book-found" />
 
-        
+        ` ;        
 
 
     }

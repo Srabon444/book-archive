@@ -77,6 +77,9 @@ const displaySearchResult = data => {
             <img src="../images/no-book-found.png" class="img-fluid" alt="no-book-found" />
         ` ;
 
+        
+
+
     }
 
     // for each loop with validation

@@ -7,6 +7,10 @@ body {
     background-color: #F9F7F4;
 }
 
+main {
+    height: 100vh;
+}
+
 a {
     text-decoration: none;
 }
@@ -88,9 +92,10 @@ footer {
     width: 300px;
 }
 
-.footer-content {
+
+/* .footer-content {
     padding: 15px;
-}
+} */
 
 
 /* ---------------------------------- 

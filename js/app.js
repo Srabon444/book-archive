@@ -108,6 +108,7 @@ const displaySearchResult = data => {
                 <h5 class="card-title fw-bold">Book Name: ${doc.hasOwnProperty('title') && doc.title.length && doc.title}</h5>
                 <p class="card-text"> Author Name: ${doc.hasOwnProperty('author_name') && doc.author_name.length && doc.author_name[0]}</p>
                 <p>First publish date: ${doc.hasOwnProperty('publish_date') && doc.publish_date.length && doc.publish_date[0]}</p>
+                <p>Publisher: ${doc.hasOwnProperty('publisher') && doc.publisher.length && doc.publisher[0]}</p>
             </div>
         </div>
     `;

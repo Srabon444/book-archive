@@ -104,16 +104,24 @@ const displaySearchResult = data => {
             
         <div class="card trans-card">
             <img src="https://covers.openlibrary.org/b/id/${doc.hasOwnProperty('cover_i') && doc.cover_i}-M.jpg" class="card-img-top w-50 mx-auto p-3" alt="${doc.hasOwnProperty('title') && doc.title.length && doc.title} cover">
-            <div class="card-body fw-bold">
-                <h5 class="card-title fw-bold">Book Name: ${doc.hasOwnProperty('title') && doc.title.length && doc.title}</h5>
-                <p class="card-text"> Author Name: ${doc.hasOwnProperty('author_name') && doc.author_name.length && doc.author_name[0]}</p>
-                <p>First publish date: ${doc.hasOwnProperty('publish_date') && doc.publish_date.length && doc.publish_date[0]}</p>
-                <p>Publisher: ${doc.hasOwnProperty('publisher') && doc.publisher.length && doc.publisher[0]}</p>
+            <div class="card-body">
+                <h5 class="card-title fw-bold">${doc.hasOwnProperty('title') && doc.title.length && doc.title}</h5>
+                <p class="card-text"> <span class="text-secondary" >by </span> ${doc.hasOwnProperty('author_name') && doc.author_name.length && doc.author_name[0]}</p>
+                <p>
+                    Published ${doc.hasOwnProperty('publish_date') && doc.publish_date.length && doc.publish_date[0]}
+                    by ${doc.hasOwnProperty('publisher') && doc.publisher.length && doc.publisher[0]}
+                </p>
+                <p>Language: ${doc.hasOwnProperty('language') && doc.language.length && doc.language[0]} </p>
+                <p>ISBN: ${doc.hasOwnProperty('isbn') && doc.isbn.length && doc.isbn[0]} </p>
+                
+                
             </div>
         </div>
     `;
         searchResult.appendChild(div);
     });
+
+    // <span></span>
 
     toggleSpinner('none');
     toggleSearchResult('');
@@ -147,9 +155,8 @@ const reloadPage = () => {
 }
 
 
-
-
-
+// set current year automatically
+document.getElementById("currentYear").innerHTML = new Date().getFullYear();
 
 
 /* -----------------------------------------------------
